@@ -1,0 +1,7 @@
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Магазин строительных материалов</title><script>(function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect.split("/Shop/")[1] || "");
+        }
+      })();</script><script defer="defer" src="/Shop/bundle.js"></script></head><body><div id="root"></div></body></html>
